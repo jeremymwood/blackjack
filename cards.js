@@ -4,34 +4,6 @@
 //https://www.thatsoftwaredude.com/content/6196/coding-a-card-deck-in-javascript
 //each card an object with suit and rank
 
-// const suit = [`diamonds`,`clubs`,`hearts`,`spades`];
-// const rank = [`ace`,`king`,`queen`,`jack`,`10`,`9`,`8`,`7`,`6`,`5`,`4`,`3`,`2`];
-//
-// // const cards = {
-// //
-// // }
-//
-// // cards.forEach()
-//
-// function createCards(){
-//      for (const card in cards) {
-//         console.log(`${rank} of ${suit}`);
-//     }
-// }
-// // createCards(cards);
-//
-//
-// // creates object containing all suits and ranks
-// const card = {
-//     suit,
-//     rank
-// }
-//
-// for (const property in card) {
-//     console.log(`${property}: ${card[property]}`);
-// }
-// console.log(card.toString());
-
 let suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
 let values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 let deck = new Array();
@@ -51,23 +23,24 @@ function createDeck(){
     }
     return deck;
 }
-// console.log(createDeck());
 
 
-function shuffle()
-{
-    // for 1000 turns
-    // switch the values of two random cards
-    for (let i = 0; i < 1000; i++)
-    {
-        let location1 = Math.floor((Math.random() * deck.length));
-        let location2 = Math.floor((Math.random() * deck.length));
-        let tmp = deck[location1];
 
-        deck[location1] = deck[location2];
-        deck[location2] = tmp;
-    }
-}
+
+// function shuffle()
+// {
+//     // for 1000 turns
+//     // switch the values of two random cards
+//     for (let i = 0; i < 1000; i++)
+//     {
+//         let location1 = Math.floor((Math.random() * deck.length));
+//         let location2 = Math.floor((Math.random() * deck.length));
+//         let tmp = deck[location1];
+//
+//         deck[location1] = deck[location2];
+//         deck[location2] = tmp;
+//     }
+// }
 //
 // let players = new Array();
 // function createPlayers(num)
