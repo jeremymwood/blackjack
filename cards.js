@@ -9,6 +9,8 @@ const card = {
     rank
 }
 
-const deck = function(){
-
-}
+//creates object containing all suits and ranks
+// for (const property in card) {
+//     console.log(`${property}: ${card[property]}`);
+// }
+// console.log(card);
